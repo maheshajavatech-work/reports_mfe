@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/reports",
+						"outputPath": "dist/reports//v1.0.0",
 						"index": "src/index.html",
 						"polyfills": [
 							"zone.js"
@@ -28,7 +28,12 @@
 							{
 								"glob": "**/*",
 								"input": "public",
-								"output": "."
+								"output": "/"
+							},
+							{
+								"glob": "**/*",
+								"input": "src/assets",
+								"output": "assets"
 							}
 						],
 						"styles": [
